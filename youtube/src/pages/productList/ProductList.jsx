@@ -12,7 +12,7 @@ export default function ProductList() {
  const {movies,dispatch}=useContext(MovieContext)
 
  useEffect(()=>{
-  console.log("movies",movies)
+  console.log("productmovies",movies)
   getMovies(dispatch)
  },[dispatch])
 

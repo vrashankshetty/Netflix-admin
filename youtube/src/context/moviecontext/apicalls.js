@@ -12,6 +12,7 @@ export const getMovies = async (dispatch) => {
       }
     });
     console.log("moviesdata",res.data)
+    localStorage.setItem("movies", JSON.stringify(res.data));
     dispatch(getMoviesSuccess(res.data));
     
   } catch (err) {
